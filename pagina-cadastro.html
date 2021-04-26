@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastre-se</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container p-3 my-3 bg-dark text-white">
+<h1> Container preto</h1>
+<p> texto da caixa preta </p>
+
+<form action="/action_page.php" class="was-validated">
+    
+    <!--CAIXA PARA COLOCAR O NOME DO USUARIO-->
+    <div class="form-group">
+      <label for="uname">Nome de usuario:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Digite seu nome de usuario" name="uname" required>
+      <div class="valid-feedback">Confirmado.</div>
+      <div class="invalid-feedback">Nome errado.</div>
+    </div>
+    
+    <!--CAIXA PARA COLOCAR A SENHA DO USUARIO-->
+    <div class="form-group">
+      <label for="pwd">Senha:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <div class="valid-feedback">Confirmado.</div>
+      <div class="invalid-feedback">Senha errada.</div>
+    </div>
+    
+   <!--BOTÃO ENVIAR-->
+    <button type="submit" class="btn btn-primary">Entrar</button>
+  </form>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
