@@ -12,8 +12,9 @@
 </head>
 
 <body>
+
     <div class="container p-3 my-3 bg-dark text-white">
-<h1> Container preto</h1>
+<h1> Entrar</h1>
 <p> texto da caixa preta </p>
 
 <form action="/action_page.php" class="was-validated">
@@ -21,7 +22,7 @@
     <!--CAIXA PARA COLOCAR O NOME DO USUARIO-->
     <div class="form-group">
       <label for="uname">Nome de usuario:</label>
-      <input type="text" class="form-control" id="uname" placeholder="Digite seu nome de usuario" name="uname" required>
+      $nome = <input type="text" class="form-control" id="uname" placeholder="Digite seu nome de usuario" name="uname" required maxlength="30">
       <div class="valid-feedback">Confirmado.</div>
       <div class="invalid-feedback">Nome errado.</div>
     </div>
@@ -29,7 +30,7 @@
     <!--CAIXA PARA COLOCAR A SENHA DO USUARIO-->
     <div class="form-group">
       <label for="pwd">Senha:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      $senha = <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required maxlength="15">
       <div class="valid-feedback">Confirmado.</div>
       <div class="invalid-feedback">Senha errada.</div>
     </div>
