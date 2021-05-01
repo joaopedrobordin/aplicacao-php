@@ -3,22 +3,36 @@
 
 class = Usuario 
 {
-    public function conectar()
+    private $pdo;
+    public function conectar($nome, $senha)
     {
+        global = $pdo;
+        try
+        {
+            $pdo = new PDO("mysql:dbname=".$nome.";host=".$host,$usuario,$senha);
+}
+        }catch (PDOException $e ) {
+            $msgErro = $e->getMessage();
+        }
+    }
 
+    public function conectar($nome, $senha);
+    {
+        global =PDO; 
 
+        $sql = $pdo->prepare("SELECT  FROM ")
 
     }
-    public function conectar()
+
+    public function logar(nome, $senha);
     {
-        
+        global $pdo;
     }
-
-
-
 
 
 }
+
+
 
 
 
